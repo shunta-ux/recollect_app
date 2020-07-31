@@ -3,7 +3,7 @@ class CreatePosts < ActiveRecord::Migration[6.0]
     create_table :posts do |t|
       t.string :image, null: false, default: ""
       t.string :sound, null: false, default: ""
-      t.text :content, null: false, default: ""
+      t.text :content, null: false
 
       t.timestamps
     end
